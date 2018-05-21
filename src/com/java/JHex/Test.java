@@ -40,5 +40,6 @@ public class Test {
 		System.out.println("------------------------------------------");
 		System.out.println(Arrays.toString(JHex.toByteArray(1.22)));
 		System.out.println((byte)0x85);
+		System.out.println();
 	}
 }

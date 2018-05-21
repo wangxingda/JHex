@@ -6,8 +6,9 @@ public final class JHex {
 	private JHex() {
 	};
 
-	private static final char[] chs = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e',
-			'f' };
+	private static final char[] chs = { 
+			'0', '1', '2', '3', '4', '5', '6', '7', 
+			'8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
 
 	// ******************************byte[]数组的转化*********************************//
 	/*
@@ -361,7 +362,7 @@ public final class JHex {
 	}
 
 	/*
-	 * 获取整形中某一位的二进制值是1还是0；
+	 * 获取整形中某一位的二进制值是1还是0，转化成整形输出
 	 */
 	public static int bitValueAt(int number, int bitAt) {
 		if (bitAt > 31 || bitAt < 0)
