@@ -1,7 +1,11 @@
 package com.java.JHex;
 
 import java.math.BigInteger;
-
+/**
+ * JHexπ§æﬂ¿‡
+ *
+ * @author wangxingda
+ */
 public final class JHex {
 	private JHex() {
 	};
