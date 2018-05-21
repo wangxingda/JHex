@@ -559,7 +559,7 @@ byteNumPerInt-一个整型由几个byte字节表示，也就是说没几个字�
 ```
 欢迎大家Follow
 --------------
-先fork此项目，在分支修改后，pull request到主分支
+先fork此项目，在分支修改后，pull request到主分支。
 
 提问请到issues里创建，欢迎contributor！
 
