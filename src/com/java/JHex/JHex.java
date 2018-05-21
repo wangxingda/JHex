@@ -362,7 +362,7 @@ public final class JHex {
 	}
 
 	/*
-	 * 获取整形中某一位的二进制值是1还是0，转化成整形输出
+	 * 获取整形中某一位的二进制值是1还是0，转化成整形返回
 	 */
 	public static int bitValueAt(int number, int bitAt) {
 		if (bitAt > 31 || bitAt < 0)
