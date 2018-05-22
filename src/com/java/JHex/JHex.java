@@ -2,7 +2,7 @@ package com.java.JHex;
 
 import java.math.BigInteger;
 /**
- * JHex¹¤¾ßÀà
+ * JHexå·¥å…·ç±»
  *
  * @author wangxingda
  */
@@ -14,7 +14,7 @@ public final class JHex {
 			'0', '1', '2', '3', '4', '5', '6', '7', 
 			'8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
 
-	// ******************************byte[]Êý×éµÄ×ª»¯*********************************//
+	// ******************************byte[]æ•°ç»„çš„è½¬åŒ–*********************************//
 	/*
 	 * int to byte[]
 	 */
@@ -34,7 +34,7 @@ public final class JHex {
 	}
 
 	/*
-	 * int[] to byte[],Ö¸¶¨¿ªÊ¼ºÍ½áÊøÎ»ÖÃ
+	 * int[] to byte[],æŒ‡å®šå¼€å§‹å’Œç»“æŸä½ç½®
 	 */
 	public static byte[] toByteArray(int[] numbers, int from, int to) {
 		if (numbers == null)
@@ -70,7 +70,7 @@ public final class JHex {
 	}
 
 	/*
-	 * float[] to byte[],Ö¸¶¨ÆðÊ¼ºÍ½áÊøÎ»ÖÃ¡£
+	 * float[] to byte[],æŒ‡å®šèµ·å§‹å’Œç»“æŸä½ç½®ã€‚
 	 */
 	public static byte[] toByteArray(float[] numbers, int from, int to) {
 		if (numbers == null)
@@ -105,7 +105,7 @@ public final class JHex {
 	}
 
 	/*
-	 * double[] to byte[]£¬Ö¸¶¨ÆðÊ¼ºÍ½áÊøÎ»ÖÃ¡£
+	 * double[] to byte[]ï¼ŒæŒ‡å®šèµ·å§‹å’Œç»“æŸä½ç½®ã€‚
 	 */
 	public static byte[] toByteArray(double[] numbers, int from, int to) {
 		if (numbers == null)
@@ -137,7 +137,7 @@ public final class JHex {
 	}
 
 	/*
-	 * byte[] to int,Ö¸¶¨µÄÁ¬Ðø×Ö½Ú
+	 * byte[] to int,æŒ‡å®šçš„è¿žç»­å­—èŠ‚
 	 */
 	public static int toInt(byte[] arr, int from, int to) {
 		if (arr == null)
@@ -182,7 +182,7 @@ public final class JHex {
 	}
 
 	/*
-	 * byte[] to int[],Ö¸¶¨µÄÁ¬Ðø×Ö½Ú
+	 * byte[] to int[],æŒ‡å®šçš„è¿žç»­å­—èŠ‚
 	 */
 	public static int[] toIntArray(byte[] arr, int byteNumPerInt, int from, int to) {
 		if (arr == null)
@@ -231,7 +231,7 @@ public final class JHex {
 	}
 
 	/*
-	 * byte[] to float[],Ö¸¶¨ÆðÊ¼ºÍÖÕµãÎ»ÖÃ
+	 * byte[] to float[],æŒ‡å®šèµ·å§‹å’Œç»ˆç‚¹ä½ç½®
 	 */
 	public static float[] toFloatArray(byte[] arr, int from, int to) {
 		if (arr == null)
@@ -253,7 +253,7 @@ public final class JHex {
 		return result;
 	}
 
-	// ******************************ÎÞ·ûºÅÊýµÄ×ª»¯*********************************//
+	// ******************************æ— ç¬¦å·æ•°çš„è½¬åŒ–*********************************//
 	/*
 	 * int to unsigned
 	 */
@@ -275,9 +275,9 @@ public final class JHex {
 		return (short) (number & 0xff);
 	}
 
-	// ******************************½øÖÆ×ª»¯*********************************//
+	// ******************************è¿›åˆ¶è½¬åŒ–*********************************//
 	/*
-	 * ÈÎÒâ½øÖÆ¼äµÄ×ª»»
+	 * ä»»æ„è¿›åˆ¶é—´çš„è½¬æ¢
 	 */
 	public static String transRadix(String number, int fromRadix, int toRadix) {
 		if (number == null || number.equals(""))
@@ -303,7 +303,7 @@ public final class JHex {
 	}
 
 	/*
-	 * to integer's hex string,Ö¸¶¨×î¶Ì×Ö·û´®³¤¶È£¬²»×ãÓÃ0²¹Æë.
+	 * to integer's hex string,æŒ‡å®šæœ€çŸ­å­—ç¬¦ä¸²é•¿åº¦ï¼Œä¸è¶³ç”¨0è¡¥é½.
 	 */
 	public static String toHexString(int number, int minHexStringLength) {
 		int len = toHexString(number).length();
@@ -322,7 +322,7 @@ public final class JHex {
 	}
 
 	/*
-	 * to integer's binary string£¬Ö¸¶¨×î¶Ì×Ö·û´®³¤¶È£¬²»×ãÓÃ0²¹Æë.
+	 * to integer's binary stringï¼ŒæŒ‡å®šæœ€çŸ­å­—ç¬¦ä¸²é•¿åº¦ï¼Œä¸è¶³ç”¨0è¡¥é½.
 	 */
 	public static String toBinaryString(int number, int minBinaryStringLength) {
 		int len = toBinaryString(number).length();
@@ -336,9 +336,9 @@ public final class JHex {
 		return sb.toString() + Integer.toBinaryString(number);
 	}
 
-	// ******************************ÌáÈ¡¶þ½øÖÆÖÐµÄÄ³Ð©Î»*********************************//
+	// ******************************æå–äºŒè¿›åˆ¶ä¸­çš„æŸäº›ä½*********************************//
 	/*
-	 * ³éÈ¡intÖÐµÄÄ³Ð©¶þ½øÖÆÎ»
+	 * æŠ½å–intä¸­çš„æŸäº›äºŒè¿›åˆ¶ä½
 	 */
 	public static String extractBits(int number, int from, int to) {
 		if (from > 31 || to > 31 || from < 0 || to < 0)
@@ -351,7 +351,7 @@ public final class JHex {
 	}
 
 	/*
-	 * ½ØÈ¡ÕûÐÍÊýÖÐÄ³Ð©Á¬ÐøµÄ¶þ½øÖÆÎ»²¢»ñµÃÆäÖµ¡£
+	 * æˆªå–æ•´åž‹æ•°ä¸­æŸäº›è¿žç»­çš„äºŒè¿›åˆ¶ä½å¹¶èŽ·å¾—å…¶å€¼ã€‚
 	 */
 	public static int getBitsValue(int number, int from, int to) {
 		if (from > 31 || to > 31 || from < 0 || to < 0)
@@ -366,7 +366,7 @@ public final class JHex {
 	}
 
 	/*
-	 * »ñÈ¡ÕûÐÎÖÐÄ³Ò»Î»µÄ¶þ½øÖÆÖµÊÇ1»¹ÊÇ0²¢·µ»Ø
+	 * èŽ·å–æ•´å½¢ä¸­æŸä¸€ä½çš„äºŒè¿›åˆ¶å€¼æ˜¯1è¿˜æ˜¯0å¹¶è¿”å›ž
 	 */
 	public static int bitValueAt(int number, int bitAt) {
 		if (bitAt > 31 || bitAt < 0)
